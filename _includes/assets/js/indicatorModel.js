@@ -25,7 +25,7 @@ var indicatorModel = function (options) {
         return data[k][i];
       }));
     });
-  }
+  };
 
 
   // general members:
