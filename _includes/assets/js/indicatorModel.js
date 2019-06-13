@@ -15,23 +15,6 @@ var indicatorModel = function (options) {
   this.onSelectionUpdate = new event(this);
   this.onNoHeadlineData = new event(this);
 
-  // data rounding:
-  this.roundingFunc = options.roundingFunc || function(value) {
-    var to = 3, mult = Math.pow(10, to - Math.floor(Math.log(Math.abs(value)) / Math.LN10) - 1);
-    return Math.round(value * mult) / mult;
-  };
-
-  // json conversion:
-  var convertJsonFormat = function(data) {
-    var keys = _.keys(data);
-
-    return _.map(data[keys[0]], function(item, i) {
-      return _.object(keys, _.map(keys, function(k) {
-        return data[k][i];
-      }));
-    });
-  }
-
   // general members:
   var that = this;
   this.data = convertJsonFormat(options.data);
