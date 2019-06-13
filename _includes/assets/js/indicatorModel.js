@@ -14,6 +14,19 @@ var indicatorModel = function (options) {
   this.onFieldsCleared = new event(this);
   this.onSelectionUpdate = new event(this);
   this.onNoHeadlineData = new event(this);
+  
+
+  // json conversion:
+  var convertJsonFormat = function(data) {
+    var keys = _.keys(data);
+
+    return _.map(data[keys[0]], function(item, i) {
+      return _.object(keys, _.map(keys, function(k) {
+        return data[k][i];
+      }));
+    });
+  }
+
 
   // general members:
   var that = this;
