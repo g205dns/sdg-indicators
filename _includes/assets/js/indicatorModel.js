@@ -25,7 +25,7 @@ var indicatorModel = function (options) {
         return data[k][i];
       }));
     });
-  };
+  }
 
 
   // general members:
@@ -148,13 +148,8 @@ var indicatorModel = function (options) {
     // only be selected if their parent has one or more selections:
     that.allowedFields = _.difference(that.selectableFields, _.pluck(that.edgesData, 'To'));
 
-    // prepare the data according to the rounding function:
+    // prepare the data:
     that.data = _.map(that.data, function(item) {
-
-      // only apply a rounding function for non-zero values:
-      if(item.Value != 0) {
-        item.Value = that.roundingFunc(item.Value);
-      }
 
       // remove any undefined/null values:
       _.each(Object.keys(item), function(key) {
