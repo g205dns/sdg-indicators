@@ -26,9 +26,11 @@ jekyll_get_json:
     # directory: 'remotedata'
   - data: schema
     json: 'https://sdg.mango-solutions.com/data/3-4-2-embed/meta/schema.json'
+  - data: reporting
+    json: 'https://sdg.mango-solutions.com/data/3-4-2-embed/stats/reporting.json'
   - data: translations
     # Pin to version of the translation repo
-    json: 'https://open-sdg.github.io/sdg-translations/translations-0.3.2.json'
+    json: 'https://open-sdg.github.io/sdg-translations/translations-0.5.1.json'
     
 analytics:
   ga_prod: ''
