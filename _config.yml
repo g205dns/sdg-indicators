@@ -12,25 +12,25 @@ baseurl: "/sdg-indicators" # the subpath of your site, e.g. /blog
 url: ""
 data_dir: data
 environment: staging
-remotedatabaseurl: "https://sdg.mango-solutions.com/data/3-4-2-embed"
+remotedatabaseurl: "https://sdg.mango-solutions.com/data/a11y_descriptive_links"
 # permalink: /news/:year/:month/:day/:title.html
 
 jekyll_get_json:
   - data: meta
-    json: 'https://sdg.mango-solutions.com/data/3-4-2-embed/meta/all.json'
+    json: 'https://sdg.mango-solutions.com/data/a11y_descriptive_links/meta/all.json'
     # cache: true
     # directory: 'remotedata'
   - data: headlines
-    json: 'https://sdg.mango-solutions.com/data/3-4-2-embed/headline/all.json'
+    json: 'https://sdg.mango-solutions.com/data/a11y_descriptive_links/headline/all.json'
     # cache: true
     # directory: 'remotedata'
   - data: schema
-    json: 'https://sdg.mango-solutions.com/data/3-4-2-embed/meta/schema.json'
+    json: 'https://sdg.mango-solutions.com/data/a11y_descriptive_links/meta/schema.json'
   - data: reporting
-    json: 'https://sdg.mango-solutions.com/data/3-4-2-embed/stats/reporting.json'
+    json: 'https://ONSdigital.github.io/sdg-data/stats/reporting.json'
   - data: translations
     # Pin to version of the translation repo
-    json: 'https://open-sdg.github.io/sdg-translations/translations-0.5.1.json'
+    json: 'https://open-sdg.github.io/sdg-translations/translations-0.5.0.json'
     
 analytics:
   ga_prod: ''
@@ -111,7 +111,7 @@ plugins:
   - jekyll-open-sdg-plugins
   - jekyll-get-json
 
-remote_theme: open-sdg/open-sdg@0.6.1
+remote_theme: open-sdg/open-sdg@0.5.3
 
 # Mapping
 map_options:
