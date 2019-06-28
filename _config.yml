@@ -27,7 +27,7 @@ jekyll_get_json:
   - data: schema
     json: 'https://sdg.mango-solutions.com/data/not-applicable/meta/schema.json'
   - data: reporting
-    json: 'https://ONSdigital.github.io/sdg-data/stats/reporting.json'
+    json: 'https://sdg.mango-solutions.com/data/not-applicable/stats/reporting.json'
   - data: translations
     # Pin to version of the translation repo
     json: 'https://open-sdg.github.io/sdg-translations/translations-0.5.1.json'
