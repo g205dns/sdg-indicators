@@ -111,7 +111,7 @@ plugins:
   - jekyll-open-sdg-plugins
   - jekyll-get-json
 
-remote_theme: open-sdg/open-sdg@dac
+remote_theme: open-sdg/open-sdg@a11y_tab_title
 
 # Mapping
 map_options:
