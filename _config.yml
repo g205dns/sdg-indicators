@@ -111,7 +111,7 @@ plugins:
   - jekyll-open-sdg-plugins
   - jekyll-get-json
 
-remote_theme: brock-fanning/open-sdg@hide-sidebar
+remote_theme: brockfanning/open-sdg@hide-sidebar
 
 # Mapping
 map_options:
