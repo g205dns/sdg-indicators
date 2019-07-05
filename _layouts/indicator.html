@@ -74,7 +74,7 @@
         {% if show_data %}
         <p class="async-loading" data-img="{{ site.baseurl }}/assets/img/loading-small.gif"></p>
         <div class="async-loaded" style="display:none">
-          <ul class="nav nav-tabs data-view" role="tablist" id=#dataview>
+          <ul class="nav nav-tabs data-view" role="tablist" id="dataview">
             <li role="presentation" class="nav-item active">
               <a class="nav-link" data-toggle="tab" href="#chartview" aria-controls="chartview" role="tab" {% include autotrack.html preset="tab_data_chart" category="Tab change" action="Change data view" label="Change to Chart tab" %}>{{ t.indicator.chart }}</a>
             </li>
