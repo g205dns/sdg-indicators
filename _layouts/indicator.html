@@ -74,7 +74,7 @@
         {% if show_data %}
         <p class="async-loading" data-img="{{ site.baseurl }}/assets/img/loading-small.gif"></p>
         <div class="async-loaded" style="display:none">
-          <ul class="nav nav-tabs data-view" role="tablist">
+          <ul class="nav nav-tabs data-view" role="tablist" id=#dataview>
             <li role="presentation" class="nav-item active">
               <a class="nav-link" data-toggle="tab" href="#chartview" aria-controls="chartview" role="tab" {% include autotrack.html preset="tab_data_chart" category="Tab change" action="Change data view" label="Change to Chart tab" %}>{{ t.indicator.chart }}</a>
             </li>
@@ -92,7 +92,7 @@
           </ul>
 
           <!-- Tab panes -->
-          <div class="tab-content data-view" id="dataview">
+          <div class="tab-content data-view">
             <div role="tabpanel" class="tab-pane active" id="chartview">
               {% include components/charts/chart.html graph_type=meta.graph_type %}
             </div>
@@ -114,7 +114,7 @@
         {% endif %}
 
         <!-- Nav tabs -->
-        <ul class="nav nav-tabs" role="tablist">
+        <ul class="nav nav-tabs" role="tablist" >
           <li role="presentation" class="nav-item active">
             <a class="nav-link" data-toggle="tab" href="#metadata" aria-controls="metadata" role="tab" {% include autotrack.html preset="tab_meta_national" category="Tab change" action="Change metadata view" label="Change to National Metadata tab" %}>{{ site.non_global_metadata | default: 'indicator.national_metadata' | t }}</a>
           </li>
@@ -122,7 +122,7 @@
             <a class="nav-link" data-toggle="tab" href="#globalmetadata" aria-controls="globalmetadata" role="tab" {% include autotrack.html preset="tab_meta_global" category="Tab change" action="Change metadata view" label="Change to Global Metadata tab" %}>{{ t.indicator.global_metadata }}</a>
           </li>
           <li role="presentation" class="nav-item">
-            <a class="nav-link" data-toggle="tab" href="#dataview" aria-controls="sources" role="tab" {% include autotrack.html preset="tab_meta_sources" category="Tab change" action="Change metadata view" label="Change to Sources tab" %}>{{ t.indicator.sources }}</a>
+            <a class="nav-link" data-toggle="tab" href="#sources" aria-controls="sources" role="tab" {% include autotrack.html preset="tab_meta_sources" category="Tab change" action="Change metadata view" label="Change to Sources tab" %}>{{ t.indicator.sources }}</a>
           </li>
           {% if site.environment == 'staging' %}
           <li role="presentation" class="nav-item">
