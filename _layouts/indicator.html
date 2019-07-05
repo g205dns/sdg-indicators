@@ -86,7 +86,7 @@
             </li>
             {%- if meta.embedded_map_html -%}
             <li role="presentation" class="nav-item embedded-map">
-              <a data-no-disagg="true" class="nav-link" data-toggle="tab" href="#embeddedmapview" onclick="javascript:location.href='#dataview'" aria-controls="embeddedmapview" role="tab" {% include autotrack.html preset="tab_data_embed" category="Tab change" action="Change data view" label="Change to embedded item tab" %}>{{ t.indicator.map }}</a>
+              <a data-no-disagg="true" class="nav-link" data-toggle="tab" href="#embeddedmapview" aria-controls="embeddedmapview" role="tab" {% include autotrack.html preset="tab_data_embed" category="Tab change" action="Change data view" label="Change to embedded item tab" %}>{{ t.indicator.map }}</a>
             </li>
             {%- endif -%}
           </ul>
@@ -99,7 +99,7 @@
             <div role="tabpanel" class="tab-pane" id="tableview">
               <div id="selectionsTable"></div>
             </div>
-            <div role="tabpanel" class="tab-pane" id="mapview" class="map">
+            <div role="tabpanel" class="tab-pane" id="mapview" class="map" href="dataview">
               <div id="map">
                 <img src="{{ site.baseurl }}/assets/img/loading.gif" alt="{{ t.indicator.loading_map }}" />
               </div>
