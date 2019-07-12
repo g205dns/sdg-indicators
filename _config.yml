@@ -113,7 +113,7 @@ plugins:
   - jekyll-open-sdg-plugins
   - jekyll-get-json
 
-remote_theme: open-sdg/open-sdg@legend-in-chart-download
+remote_theme: open-sdg/open-sdg@html-chart-attributes
 
 # Mapping
 map_options:
