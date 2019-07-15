@@ -111,7 +111,7 @@ plugins:
   - jekyll-open-sdg-plugins
   - jekyll-get-json
 
-remote_theme: brockfanning/open-sdg@translate-table-footer-metadata
+remote_theme: sdg-kyrgyzstan/open-sdg-site-starter@footer-fields-test
 
 # Mapping
 map_options:
