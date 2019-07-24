@@ -29,4 +29,4 @@ jekyll_get_json:
     json: 'https://JustusCas.github.io/sdg-translations/translations.json'
 
 analytics:
-  ga_prod: 'UA-108503280-1'
+  ga_prod: ''
