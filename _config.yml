@@ -46,7 +46,7 @@ email_contacts:
 # Github Repo for Data
 repo_name: sdg-data
 branch: develop
-org_name: G205DNS
+org_name: g205dns
 
 # Build settings
 markdown: kramdown
